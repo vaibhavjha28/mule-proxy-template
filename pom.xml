@@ -3,11 +3,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>9cbfeea6-3931-4b24-b763-135be8eff827</groupId>
-    <artifactId>mule-proxy-template</artifactId>
+    <artifactId>mule-proxy-template-app</artifactId>
     <version>1.0.0</version>
 
-    <packaging>mule-application</packaging>
-    <name>mule-proxy-template</name>
+    <packaging>${packaging}</packaging>
+    <name>mule-proxy-template-app</name>
 
     <properties>
         <muleHttpConnector>1.1.1</muleHttpConnector>
@@ -112,12 +112,6 @@
 									<anypoint.platform.client_secret>${secret}</anypoint.platform.client_secret>
 									<anypoint.platform.base_uri>https://anypoint.mulesoft.com</anypoint.platform.base_uri>
 									<anypoint.platform.analytics_base_uri>https://analytics-ingest.anypoint.mulesoft.com</anypoint.platform.analytics_base_uri>
-									<proxy.path>${proxyPath}</proxy.path>
-									<proxy.port>${proxyPort}</proxy.port>
-									<proxy.responseTimeout>${proxyTimeout}</proxy.responseTimeout>
-									<implementation.host>${implHost}</implementation.host>
-									<implementation.port>${implPort}</implementation.port>
-									<implementation.path>${implPath}</implementation.path>
 								</properties>
 					            <deploymentSettings>
 					                <cpuReserved>${cpu}</cpuReserved>
